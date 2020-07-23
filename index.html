@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KekeCart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="icon" href="img/core-img/sofa.png">
+    <link rel="stylesheet" href="css/core-style.css">
+
+</head>
+<body>
+    <header class="header_area sticky">
+        <div class="classy-nav-container d-flex align-items-center justify-content-between light left breakpoint-on">
+            <!-- Classy Menu -->
+            <nav class="classy-navbar" id="essenceNav">
+                <!-- Logo -->
+                <a class="nav-brand" href="/Home/Index"><img src="/img/core-img/headlogo.png" alt=""></a>
+                <!-- Navbar Toggler -->
+                <div class="classy-navbar-toggler">
+                    <span class="navbarToggler"><span></span><span></span><span></span></span>
+                </div>
+                <!-- Menu -->
+                <div class="classy-menu">
+                    <!-- close btn -->
+                    <div class="classycloseIcon">
+                        <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                    </div>
+
+                </div>
+            </nav>
+
+            <!-- Header Meta Data -->
+            <div class="header-meta d-flex clearfix justify-content-end">
+                <!-- Cart Area -->
+                <div class="cart-area">
+                    <a href="#" id="essenceCartBtn"><img src="/img/core-img/bag.svg" alt=""> <span class="cart-item-count">0</span></a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+    <!-- ##### Right Side Cart Area ##### -->
+    <div class="cart-bg-overlay"></div>
+
+    <div class="right-side-cart-area">
+
+        <!-- Cart Button -->
+        <div class="cart-button">
+            <a href="#" id="rightSideCart"><img src="img/core-img/bag.svg" alt=""> <span class="cart-item-count">0</span></a>
+        </div>
+        <div class="cart-content d-flex">
+
+            <!-- Cart List Area -->
+            <div class="cart-list">
+
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-amount-summary">
+
+                <h2>Summary</h2>
+                <ul class="summary-table">
+                    <li><span class="cart-total-title">total:</span> <span class="cart-total-price">$0</span></li>
+                </ul>
+                <div class="checkout-btn mt-100">
+                    <a href="/Product/Checkout" class="btn essence-btn">check out</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ##### Right Side Cart End ##### -->
+
+    
+
+
+
+
+<div class="breadcumb_area bg-img" style="background-image: url(https://localhost:44354//img/bg-img/breadcumb.jpg)" ;"="">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="page-title text-center">
+                    <h2>All</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ##### Shop Grid Area Start ##### -->
+<section class="shop_grid_area section-padding-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="shop_sidebar_area">
+
+                    <!-- ##### Single Widget ##### -->
+                    <div class="widget catagory mb-50">
+                        <!-- Widget Title -->
+                        <h6 class="widget-title mb-30">商品總覽</h6>
+
+                        <!--  Catagories  -->
+                        <div class="catagories-menu">
+                            <ul id="menu-content2" class="menu-content collapse show">
+                                <!-- Single Item -->
+                                <li data-toggle="collapse" data-target="#clothing">
+                                    <a href="#">產品分類</a>
+                                    <ul class="sub-menu collapse show" id="clothing">
+                                        <li><a href="/Product/Index/All">All</a></li>
+                                        <li><a href="/Product/Index/Sofa">沙發</a></li>
+                                        <li><a href="/Product/Index/Bed">床</a></li>
+                                        <li><a href="/Product/Index/Table">桌子</a></li>
+                                        <li><a href="/Product/Index/Chair">椅子</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9">
+                <div class="shop_grid_product_area">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="product-topbar d-flex align-items-center justify-content-between">
+                                <!-- Total Products -->
+                                <div class="total-products">
+                                    <p>找到<span>24</span> 個商品</p>
+                                </div>
+                                <!-- Sorting -->
+                                <div class="product-sorting d-flex">
+                                    <p>依序:</p>
+                                    <form action="#" method="get">
+                                        <select name="select" id="sortByselect">
+                                            <option value="value">最新上架的商品</option>
+                                        </select>
+                                        <input type="submit" class="d-none" value="">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/sofa_01_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/sofa_01_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/1">
+                                                <h6 class="shop-item-title">深灰色木材三人座沙發</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">1</h6>
+                                            </a>
+                                            <p class="product-price">$21900</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/sofa_02_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/sofa_02_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/2">
+                                                <h6 class="shop-item-title">深綠色淺棕色木質三人座沙發</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">2</h6>
+                                            </a>
+                                            <p class="product-price">$19900</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/sofa_03_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/sofa_03_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/3">
+                                                <h6 class="shop-item-title">白色三人座沙發</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">3</h6>
+                                            </a>
+                                            <p class="product-price">$25900</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/sofa_04_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/sofa_04_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/4">
+                                                <h6 class="shop-item-title">深黃色高背扶手椅</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">4</h6>
+                                            </a>
+                                            <p class="product-price">$6490</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/sofa_05_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/sofa_05_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/5">
+                                                <h6 class="shop-item-title">黑色金屬三人座沙發</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">5</h6>
+                                            </a>
+                                            <p class="product-price">$27900</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/sofa_06_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/sofa_06_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/6">
+                                                <h6 class="shop-item-title">橘色三人座沙發</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">6</h6>
+                                            </a>
+                                            <p class="product-price">$16500</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/bed_01_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/bed_01_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/7">
+                                                <h6 class="shop-item-title">白色小型雙人床框</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">7</h6>
+                                            </a>
+                                            <p class="product-price">$16170</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/bed_02_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/bed_02_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/8">
+                                                <h6 class="shop-item-title">黑棕色雙人床框</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">8</h6>
+                                            </a>
+                                            <p class="product-price">$10290</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/bed_03_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/bed_03_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/9">
+                                                <h6 class="shop-item-title">鋁質黑色雙人床框</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">9</h6>
+                                            </a>
+                                            <p class="product-price">$21250</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/bed_04_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/bed_04_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/10">
+                                                <h6 class="shop-item-title">鋁質藤製雙人床框</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">10</h6>
+                                            </a>
+                                            <p class="product-price">$22050</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/bed_05_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/bed_05_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/11">
+                                                <h6 class="shop-item-title">白色小型抽屜雙人床框</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">11</h6>
+                                            </a>
+                                            <p class="product-price">$25870</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/bed_06_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/bed_06_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/12">
+                                                <h6 class="shop-item-title">樺木雙人床框</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">12</h6>
+                                            </a>
+                                            <p class="product-price">$13300</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/table_01_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/table_01_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/13">
+                                                <h6 class="shop-item-title">白色桌子</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">13</h6>
+                                            </a>
+                                            <p class="product-price">$3780</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/table_02_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/table_02_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/14">
+                                                <h6 class="shop-item-title">白色L行書桌</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">14</h6>
+                                            </a>
+                                            <p class="product-price">$2990</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/table_03_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/table_03_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/15">
+                                                <h6 class="shop-item-title">黑色書桌</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">15</h6>
+                                            </a>
+                                            <p class="product-price">$7990</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/table_04_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/table_04_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/16">
+                                                <h6 class="shop-item-title">黑棕色玻璃筆記型電腦桌</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">16</h6>
+                                            </a>
+                                            <p class="product-price">$1290</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/table_05_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/table_05_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/17">
+                                                <h6 class="shop-item-title">黑棕色書桌</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">17</h6>
+                                            </a>
+                                            <p class="product-price">$2990</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/table_06_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/table_06_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/18">
+                                                <h6 class="shop-item-title">白色升降式工作桌</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">18</h6>
+                                            </a>
+                                            <p class="product-price">$15490</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/chair_01_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/chair_01_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/19">
+                                                <h6 class="shop-item-title">一般黑色餐椅</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">19</h6>
+                                            </a>
+                                            <p class="product-price">$299</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/chair_02_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/chair_02_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/20">
+                                                <h6 class="shop-item-title">深棕白色餐椅
+</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">20</h6>
+                                            </a>
+                                            <p class="product-price">$2390</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/chair_03_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/chair_03_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/21">
+                                                <h6 class="shop-item-title">深棕灰色餐椅 </h6>
+                                                <h6 class="shop-item-id" hidden="hidden">21</h6>
+                                            </a>
+                                            <p class="product-price">$1690</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/chair_04_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/chair_04_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/22">
+                                                <h6 class="shop-item-title">樺木灰色餐椅</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">22</h6>
+                                            </a>
+                                            <p class="product-price">$2490</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/chair_05_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/chair_05_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/23">
+                                                <h6 class="shop-item-title">簡約黑色餐椅</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">23</h6>
+                                            </a>
+                                            <p class="product-price">$890</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Product -->
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="single-product-wrapper">
+                                        <!-- Product Image -->
+                                        <div class="product-img">
+                                            <img class="shop-item-image" src="/img/product-img/chair_06_1.jpg" alt="">
+                                            <!-- Hover Thumb -->
+                                            <img class="hover-img" src="/img/product-img/chair_06_2.jpg" alt="">
+
+                                            <!-- Favourite -->
+                                            <div class="product-favourite">
+                                                <a href="#" class="favme fa fa-heart"></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Description -->
+                                        <div class="product-description">
+                                            <a href="/ProductDetail/Index/24">
+                                                <h6 class="shop-item-title">灰色餐椅</h6>
+                                                <h6 class="shop-item-id" hidden="hidden">24</h6>
+                                            </a>
+                                            <p class="product-price">$1990</p>
+
+                                            <!-- Hover Content -->
+                                            <div class="hover-content">
+                                                <!-- Add to Cart -->
+                                                <div class="add-to-cart-btn">
+                                                    <a href="#" class="btn essence-btn">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <nav aria-label="navigation">
+                    <ul class="pagination mt-50 mb-70">
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Shop Grid Area End ##### -->
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer_area clearfix">
+        <div class="container">
+            <div class="row">
+                <!-- Single Widget Area -->
+                <div class="col-12 col-md-6">
+                    <div class="single_widget_area d-flex mb-30">
+                        <!-- Logo -->
+                        <div class="footer-logo mr-50">
+                            <a href="/Home/Index"><img src="/img/core-img/footerlogo.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-end">
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Copyright ©
+                        <script>document.write(new Date().getFullYear());</script>2020 All rights reserved
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <!-- Popper js -->
+    
+    <!-- Bootstrap js -->
+    
+    <!-- Plugins js -->
+    <script src="/js/plugins.js"></script>
+    <!-- Classy Nav js -->
+    <script src="/js/classy-nav.min.js"></script>
+    <!-- Active js -->
+    <script src="/js/active.js"></script>
+    <script src="/js/kekecart-v2.0.js"></script>
+    <script>
+        $(document).ready(setAllProducts());
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
