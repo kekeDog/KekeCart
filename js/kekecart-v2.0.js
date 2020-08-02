@@ -60,11 +60,7 @@ function addCartClicked(event) {
     var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
     var price = shopItem.getElementsByClassName('product-price')[0].innerText
     var imgSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
-    var id = shopItem.getElementsByClassName('shop-item-id')[0].innerHTML
-    addItemToCart(title, price, imgSrc, id)
-
-
-        
+    var id = shopItem.getElementsByClassName('shop-item-id')[0].innerHTML    
     var products = getAllProducts()
     products.push({
         "title": title,
@@ -73,6 +69,7 @@ function addCartClicked(event) {
         "id": id
     })
     localStorage.setItem('productarray', JSON.stringify(products))
+    addItemToCart(title, price, imgSrc, id)
 
     updateCartTotal()
 }
